@@ -1,0 +1,6 @@
+- This is an introduction to the course. 
+- It is meant for anyone interested in Docker.
+- Some knowledge of Linux command line skills is required.
+- Thought not cited as requirement, I think an experience in development using Node.js etc will come handy. 
+- The USP of this course is that it lets you containerize many applications thought the exercises. Some courses will mainly teach the syntax of Docker and not how to use it.
+- On completion of the course, you get a certificate as well as [ECTS](https://education.ec.europa.eu/education-levels/higher-education/inclusive-and-connected-higher-education/european-credit-transfer-and-accumulation-system) credits.
