@@ -1,0 +1,1 @@
+Shorten version: The container runs a curl in loop but it doesn't have curl installed. The goal is to get into the container and install curl.
