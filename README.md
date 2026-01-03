@@ -11,4 +11,6 @@ DevOps with Docker, an online course by the [University of Helsinki MOOC center]
 1. [Exercise 1.2](./exercise/exercise1.2/)
 1. [Exercise 1.3](./exercise/exercise1.3/)
 1. [Exercise 1.4](./exercise/exercise1.4/)
+1. [Exercise 1.5](./exercise/exercise1.5/)
+1. [Exercise 1.6](./exercise/exercise1.6/)
 1. [Exercise 1.7](./exercise/exercise1.7/)
