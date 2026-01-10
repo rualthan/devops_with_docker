@@ -435,7 +435,7 @@ docker run -p 8080:8080 devopsdockeruh/simple-web-service server
 localhost:8080 will redirect to the 8080 in the container.
 
 ## Publishing to Registry
-To publish an image, in this example our yt-dlp to to Docker Hub:
+To publish an image, in this example our yt-dlp to Docker Hub under my account rualthan:
  
     docker login
     docker tag yt-dlp rualthan/yt-dlp
