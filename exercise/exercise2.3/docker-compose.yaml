@@ -1,0 +1,10 @@
+
+services:
+  example-backend:
+    image: example-backend
+    ports:
+      - 8080:8080
+  example-frontend:
+    image: example-frontend
+    ports:
+      - 5001:5001
