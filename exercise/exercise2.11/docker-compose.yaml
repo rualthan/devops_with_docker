@@ -1,0 +1,7 @@
+services:
+  movies_download:
+    build: .
+    volumes:
+      - ./movies:/app
+    ports:
+      - "8000:8000"
