@@ -1,0 +1,24 @@
+
+services:
+  example-backend:
+    image: example-backend
+    ports:
+      - 8080:8080
+    environment:
+      - REDIS_HOST=redis
+      - POSTGRES_HOST=db
+      - POSTGRES_USER=example
+      - POSTGRES_PASSWORD=example
+      - POSTGRES_DATABASE=postgres
+  example-frontend:
+    image: example-frontend
+    ports:
+      - 5001:5001
+  redis:
+    image: redis:alpine
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=example
+      - POSTGRES_PASSWORD=example
+    restart: unless-stopped
