@@ -1,0 +1,12 @@
+FROM golang:1.24-alpine
+RUN apk update && apk add --no-cache ca-certificates && \
+    rm -rf /var/cache/apk/*
+WORKDIR /usr/src/app
+COPY . .
+RUN go build && \
+    rm -rf cache common  controller  go.mod go.sum pgconnection router && \
+    adduser -D appuser
+USER appuser
+ENV REQUEST_ORIGIN="http://localhost:5001"
+EXPOSE 8080
+CMD [ "./server" ]

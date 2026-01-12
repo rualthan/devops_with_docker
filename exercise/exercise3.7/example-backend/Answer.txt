@@ -1,0 +1,23 @@
+Frontend, from 1.07GB to 942MB
+FROM node:16-alpine
+WORKDIR /usr/src/app
+COPY . .
+ENV REACT_APP_BACKEND_URL="http://localhost:8080" 
+RUN npm install && \
+    npm run build && \
+    npm install -g serve
+EXPOSE 5001
+CMD ["serve", "-s", "build", "-l", "5001"]
+
+
+Backend:
+1.29GB to 680MB
+FROM golang:alpine3.23
+RUN apk update && apk add --no-cache ca-certificates && \
+    rm -rf /var/cache/apk/*
+WORKDIR /usr/src/app
+COPY . .
+RUN go build
+ENV REQUEST_ORIGIN="http://localhost:5001"
+EXPOSE 8080
+CMD [ "./server" ]
