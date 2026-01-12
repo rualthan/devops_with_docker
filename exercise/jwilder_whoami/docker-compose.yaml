@@ -1,0 +1,11 @@
+services:
+  whoami:
+    image: jwilder/whoami
+    ports:
+      - 8000
+      #When scaling up, leave out the host port to avoid conflics
+      # - 8000
+      # It will be automatically assigned by docker
+      # To find which port was assigned, use:
+      # docker-compose port whoami <container_port>
+      # docker-compose port --index 1 whoami <container_port>

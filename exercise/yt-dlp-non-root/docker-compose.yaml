@@ -1,0 +1,7 @@
+services:
+  yt-dlp-ubuntu:
+    image: rualthan/yt-dlp-ubuntu:latest
+    build: .
+    volumes:
+      - .:/mydir
+    container_name: yt-dlp
